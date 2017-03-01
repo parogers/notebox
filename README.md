@@ -1,2 +1,2 @@
-# notebox
+# Notebox
 Simple div popup on a webpage

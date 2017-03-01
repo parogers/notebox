@@ -1,0 +1,38 @@
+/* 
+ * Author: Peter Rogers (peter.rogers@gmail.com)
+ * License: GPLv3 (see LICENSE for details)
+ */
+
+.note {
+    border-bottom-color: #000;
+    border-bottom: solid 1px;
+}
+
+.notebox_temp {
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    padding: 1em;
+    width: 200px;
+}
+
+.notebox {
+    position: absolute;
+    border-color: #000;
+    border: solid 1px;
+    background-color: #fff;
+    padding: 1em;
+    opacity: 1;
+    color: #000;
+    -webkit-transition: opacity 0.2s, color 0.65s;
+    transition: opacity 0.2s, color 0.65s;
+    width: 200px;
+}
+
+#primary {
+    line-height: 140%;
+    width: 500px;
+    margin-left: 2em;
+    padding: 1em;
+    border: solid 1px;
+}
