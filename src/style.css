@@ -8,25 +8,33 @@
     border-bottom: solid 1px;
 }
 
+/* The temporary style used to first determine the extent of the notebox
+ * content. */
 .notebox_temp {
     position: absolute;
     opacity: 0;
     color: #fff;
-    padding: 1em;
-    width: 200px;
 }
 
+/* The actual styling for the popup box, minus the padding and width 
+ * properties which should be defined below. */
 .notebox {
     position: absolute;
     border-color: #000;
     border: solid 1px;
-    background-color: #fff;
+    background-color: #eee;
     padding: 1em;
-    opacity: 1;
     color: #000;
     -webkit-transition: opacity 0.2s, color 0.65s;
     transition: opacity 0.2s, color 0.65s;
-    width: 200px;
+}
+
+/* Specifies the width and padding properties for the notebox. Do that here
+ * so the values are picked up by the proper style, and the temp style used
+ * when determining the final box size. */
+.notebox, .notebox_temp {
+    padding: 1em;
+    width: 300px;
 }
 
 #primary {

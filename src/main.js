@@ -15,6 +15,8 @@ function attachRemoveEvent(div)
     window.addEventListener("click", dismiss);
 }
 
+/* The code handling the popup. Call it from an onclick handler attached
+ * to a span or something. */
 function showPopup(event, text) 
 {
     var content = document.getElementById("primary");
@@ -57,11 +59,11 @@ function showPopup(event, text)
     //console.log(divRect.bottom - divRect.top);
 
     // Now position the div
-    console.log("SETTING LEFT " + left);
+    //console.log("SETTING LEFT " + left);
     div.style.top = top + window.pageYOffset;
     div.style.left = left + window.pageXOffset;
 
-    console.log("PAD '" + window.getComputedStyle(div).paddingLeft + "'");
+    //console.log("PAD '" + window.getComputedStyle(div).paddingLeft + "'");
 
     window.setTimeout(function() {
 	/* Shift the popup up if it drops below the bottom of the content
